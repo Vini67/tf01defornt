@@ -1,0 +1,15 @@
+{
+  "name": "unifaat-frontend-tf-aula01-server-html-jsdom",
+  "version": "1.0.0",
+  "description": "1. [Instalação e Execução](#instalacao-e-execucao)  \r 2. [📦 Bibliotecas Utilizadas](#bibliotecas-utilizadas)  \r 3. [📁 Estrutura de Diretórios (raiz)](#estrutura-de-diretorios-raiz)  \r 4. [🐳 Containers e Imagens Docker](#containers-e-imagens-docker)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

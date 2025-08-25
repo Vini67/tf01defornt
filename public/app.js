@@ -31,5 +31,50 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Codar aqui
 
+const todos = ["Estudar JS", "Fazer exercício", "Descansar"];
+
+
+const listWrapper = document.getElementById('list-wrapper');
+const input = document.getElementById('list-add');
+const addBtn = document.querySelector('.btn');
+
+
+const ul = document.createElement('ul');
+
+
+function createLi(text) {
+  const li = document.createElement('li');
+  li.textContent = text;
+
+  const deleteBtn = document.createElement('button');
+  deleteBtn.textContent = 'Deletar';
+
+  
+  deleteBtn.addEventListener('click', () => {
+    li.remove();
+  });
+
+  li.appendChild(deleteBtn);
+  return li;
+}
+
+
+todos.forEach(todo => {
+  ul.appendChild(createLi(todo));
+});
+
+listWrapper.appendChild(ul);
+
+
+addBtn.addEventListener('click', () => {
+  const newTodo = input.value.trim();
+
+  if (newTodo === '') return; 
+
+  ul.appendChild(createLi(newTodo));
+  input.value = ''; 
+});
+
+
 
 });
